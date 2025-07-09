@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>Appointment Form</h2>
+          <hr />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="75b671d5-035e-4d4c-8885-d0230bbe0776"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="text"
+          name="age"
+          placeholder="Your Age"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="tel"
+          name="Phone No."
+          placeholder="Your Phone no."
+          class="contact-inputs"
+          required
+        />
+
+        <input type="date" name="date" class="contact-inputs" required />
+
+        <p>Please select your desired shift</p>
+        <div class="shifts">
+          <input
+            type="radio"
+            id="shift1"
+            name="desired Shift"
+            value="Morning Shift"
+          />
+          <label for="shift1">Morning Shift <span>(10 AM - 2 PM)</span></label>
+        </div>
+        <div class="shifts">
+          <input
+            type="radio"
+            id="shift2"
+            name="desired Shift"
+            value="Evening Shift"
+          />
+          <label for="shift2">Evening Shift <span>(5 PM - 10 PM)</span></label>
+        </div>
+
+        <!-- <label>Morning shift</label>
+        <input type="time" name="time" class="contact-inputs" min="10:00" max="14:00" required />
+        <label>Evening shift</label>
+        <input type="time" name="time" class="contact-inputs" min="17:00" max="22:00" required /> -->
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      <div class="contact-right">
+        <img src="images/doctor-img.png" />
+      </div>
+    </div>
+  </body>
+</html>
